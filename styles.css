@@ -17,6 +17,7 @@ html {
  di maapektuhan lahat ng page. pwede dalawang class value sa isang class attribute. kapag mga madaming
  tags ang lalagyan mas better kung child selector nalang*/
 
+/*start of navbar */
 .bg-darkred{
     background-color: #B3000C;
 
@@ -58,7 +59,7 @@ ul > li a { /* global */
 }
 
 
-/* kapag may : ganyan tulad ng hover gawa ng sariling design.*/
+/* kapag may : ganyan tulad ng hover gawa ng sariling class para di maapektuhan lahat.*/
 .uldes1 > li a:hover {
     background-color: #E40010;
 }
@@ -76,6 +77,9 @@ ul > li a { /* global */
 .pink {
     background-color: pink;
 }
+
+
+/*end of navbar */
 
 .ownbody1{
     background-image: url('https://static.vecteezy.com/system/resources/previews/030/634/532/large_2x/christmas-backgrounds-image-hd-free-photo.jpg');
