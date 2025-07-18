@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.main1{
+    font-family: 'Mountains of Christmas', cursive;
+    height: 100%;
+}
+
+html {
+    height: 100%;
+}
+
+/* kapag gusto nyo mag lagay ng design sa may container and tags, gawa kayo ng bagong class para
+ di maapektuhan lahat ng page. pwede dalawang class value sa isang class attribute. kapag mga madaming
+ tags ang lalagyan mas better kung child selector nalang*/
+
+.bg-darkred{
+    background-color: #B3000C;
+
+}
+
+.bg-red{
+    background-color:#E40010;
+}
+
+
+
+
+ul { /* global */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+ul > li { /* global */
+    float: left;
+}
+
+ul > li a { /* global */
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-left: 40px;
+    font-size: 20px;
+}
+/*child selector lahat ng a, di na kailangan lagyan ng class ang lahat ng a sa design1html*/
+.uldes1 > li a{
+    color: #D8D8D8;
+}
+
+.uldes2 > li a{
+    color:black
+}
+
+
+/* kapag may : ganyan tulad ng hover gawa ng sariling design.*/
+.uldes1 > li a:hover {
+    background-color: #E40010;
+}
+
+.navdes { /*global */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin: 0% 21% 0% 21%;
+}
+
+
+
+.pink {
+    background-color: pink;
+}
+
+.ownbody1{
+    background-image: url('https://static.vecteezy.com/system/resources/previews/030/634/532/large_2x/christmas-backgrounds-image-hd-free-photo.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.ownbody2{
+    text-align: center;
+    background-color: black;
+    color: white;
+    
+    padding: 20px; /* try tanggalin tong line tignan kung anong mangyari sa design 2 */
+}
+
+.fullimg{ /*global */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+.maincontent1 {
+    background-color: rgba(31, 213, 55, 0.4);  /* Transparent green background */
+    padding: 40px;
+    border-radius: 20px;
+}
