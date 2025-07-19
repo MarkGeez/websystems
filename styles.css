@@ -28,7 +28,9 @@ html {
 }
 
 
-
+.red{
+  border: 5px solid red;
+}
 
 ul { /* global */
     list-style-type: none;
@@ -79,7 +81,7 @@ ul > li a {
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    margin: 0% 21% 0% 21%;
+    margin: 0% 16% 0% 16%;
 }
 
 
@@ -90,6 +92,18 @@ ul > li a {
 
 
 /*end of navbar */
+.modern-gallery-img1 {
+  width: 320px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.09);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.modern-gallery-img1:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 32px rgba(0,180,216,0.15);
+}
 
 .ownbody1{
     background-image: url('https://static.vecteezy.com/system/resources/previews/030/634/532/large_2x/christmas-backgrounds-image-hd-free-photo.jpg');
@@ -134,6 +148,20 @@ ul > li a {
   min-height: 100vh;
   margin: 0;
 }
+
+.oi-regular1 {
+  font-family: "Oi", serif;
+  margin:0px 0px 20px 0px;
+  font-weight: 400;
+  font-style: italic; /* Retaining italic for stylistic effect, or change to normal for less slant */
+  font-size: 6.5em;
+  text-align: center;
+  color: #B30000; /* Deep Christmas Red for the main text */
+  text-shadow: 5px 5px 8px rgb(0, 100, 0); /* Christmas Green shadow */
+    
+    
+}
+
 .oi-regular {
   font-family: "Oi", serif;
   font-weight: 400;
@@ -224,7 +252,7 @@ ul > li a {
 .quicksand-main {
   font-family: "Quicksand", sans-serif;
   font-optical-sizing: auto;
-  font-weight: ;
+  
   font-style: normal;
 }
 
@@ -256,6 +284,12 @@ ul > li a {
 #active {
   background-color: rgb(255, 175, 0);
   color: rgb(122, 54, 22);
+  border-radius: 50px;
+}
+
+#active1 {
+  background-color: rgb(79, 212, 91);
+  color: rgb(255, 1, 1);
   border-radius: 50px;
 }
 h5.heading-5 {
@@ -348,3 +382,144 @@ span.title-span {
   word-spacing: 20px;
   text-shadow: none;
 }
+
+
+/*Modern Theme CSS*/
+body.modern-bg {
+  margin: 0;
+  font-family: 'Quicksand', Arial, sans-serif;
+  background: linear-gradient(120deg, #f8fafc 0%, #e0e7ef 100%);
+  color: #222;
+}
+
+.modern-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 4vw;
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.modern-logo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2b2d42;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.modern-logo span {
+  color: #00b4d8;
+}
+
+.modern-nav-list {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+.modern-nav-list li a {
+  text-decoration: none;
+  color: #2b2d42;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  transition: background 0.2s, color 0.2s;
+}
+.modern-nav-list li a.active,
+.modern-nav-list li a:hover {
+  background: #00b4d8;
+  color: #fff;
+}
+.modern-btn {
+  background: #00b4d8;
+  color: #fff;
+  padding: 0.7rem 2rem;
+  border-radius: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px rgba(0,180,216,0.12);
+  border: none;
+  cursor: pointer;
+}
+.modern-btn.large {
+  font-size: 1.2rem;
+  padding: 1rem 2.5rem;
+}
+.modern-btn:hover {
+  background: #0077b6;
+}
+.modern-hero {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 2rem 8vw 2.5rem 8vw;
+  gap: 2rem;
+  box-sizing: border-box;
+}
+.modern-hero-content {
+  text-align: center;
+  margin-bottom: 2vh;
+}
+.modern-hero-desc {
+  color: #444;
+  font-size: 1.05rem;
+  margin-bottom: 2rem;
+  margin-top: -1rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+.modern-gallery-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+.modern-gallery-img {
+  width: 420px;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.09);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.modern-gallery-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 32px rgba(0,180,216,0.15);
+}
+@media (max-width: 900px) {
+  .modern-gallery-top {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  .modern-gallery-img {
+    width: 90vw;
+    max-width: 320px;
+  }
+}
+@media (max-width: 900px) {
+  .modern-hero {
+    min-height: 70vh;
+    padding: 1rem 4vw 2.5rem 4vw;
+  }
+  .modern-hero-content {
+    margin-bottom: 1vh;
+  }
+}
+
