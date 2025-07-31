@@ -41,6 +41,24 @@ ul { /* global */
 ul > li { /* global */
     float: left;
 }
+.main-button1 {
+  background-color: rgb(255, 0, 0);
+  color: white;
+  font-family: "Chicle", serif;
+  font-size: 1.5em;       
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 20px auto;
+
+}
+.main-button1:hover {
+  background-color:  white;
+  color:rgb(255, 0, 0);
+}
+
 /* To iniba ko (yung class lang ng li)*/
 ul > li.lides1 a { /* global */
     display: block;
@@ -90,6 +108,21 @@ ul > li a {
     background-color: pink;
 }
 
+.oi-regular1 {
+  font-family: "Oi", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 5.5em;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0101;
+}
+
+#active1 {
+  background-color: rgb(67, 184, 31);
+  color: rgb(122, 54, 22);
+  border-radius: 50px;
+}
 
 /*end of navbar */
 .modern-gallery-img1 {
@@ -132,7 +165,7 @@ ul > li a {
 
 .maincontent1 {
     background-color: rgba(31, 213, 55, 0.4);  /* Transparent green background */
-    padding: 40px;
+    padding: 0px 40px 40px 40px;
     border-radius: 20px;
 }
 
@@ -696,5 +729,3 @@ p.horror-merriweather-regular {
   align-items: center;
 
 }
-
-
